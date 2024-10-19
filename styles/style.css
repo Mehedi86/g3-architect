@@ -41,14 +41,19 @@
     margin: 0 auto;
     padding: 40px 0 0;
 }
+.brand{
+    font-size: 1.5rem;
+}
 .nav-item{
     list-style: none;
     margin-right: 25px;
     font-weight: 600;
+    font-size: 1rem;
 }
 .nav-item-last{
     list-style: none;
     font-weight: 600;
+    font-size: 1rem;
 }
 .title-box{
     padding: 20px 0;
@@ -56,7 +61,7 @@
     margin: 0 auto;
 }
 .title{
-    font-size: 60px;
+    font-size: 3rem;
     font-weight: bold;
     margin: 20px 0;
 }
@@ -75,7 +80,9 @@
 .banner{
     margin: 40px auto;
 }
-
+.banner-img{
+    width: 100%;
+}
 .quicklist-section{
     max-width: 1440px;
     margin: 60px auto;
@@ -93,5 +100,33 @@
     padding: 120px;
 }
 .quicklist-tile{
-    font-size: 45px;
+    font-size: 2rem;
+}
+
+@media screen and (max-width: 576px) {
+    .navbar,
+    .nav-box{
+        flex-direction: column;
+        margin: 0 auto;
+    }
+    .nav-box{
+        padding-left: 20px;
+    }
+    .brand{
+        text-align: center;
+        margin: 1.5rem 0;
+    }
+    .section-container{
+        flex-direction: column;
+    }
+    .image-box{
+        grid-template-columns: repeat(1, 1fr);
+        margin: 0 auto;
+    }
+    .image-box>img{
+        width: 100%;
+    }
+    .quicklist-content{
+        padding: 0;
+    }
 }
