@@ -24,7 +24,9 @@
 .color-primary{
     color: #727272;
 }
-
+.orange{
+    color:rgba(255, 144, 14, 1);
+}
 .color-secondary{
     background-color: rgba(255, 144, 14, 1);
 }
@@ -60,6 +62,7 @@
 }
 .sub-title{
     font-size: 16px;
+    color: #727272;
 }
 .btn{
     font-size: 20px;
@@ -71,4 +74,24 @@
 }
 .banner{
     margin: 40px auto;
+}
+
+.quicklist-section{
+    max-width: 1440px;
+    margin: 60px auto;
+
+}
+.image-box{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+}
+.quicklist-box{
+    align-items: center;
+}
+.quicklist-content{
+    padding: 120px;
+}
+.quicklist-tile{
+    font-size: 45px;
 }
